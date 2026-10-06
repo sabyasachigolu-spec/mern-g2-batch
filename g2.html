@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        border-bottom: 1px solid lightgrey;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 100;
+
+    }
+
+    .logo {
+        color: green;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .input {
+        width: 35%;
+        position: relative;
+    }
+
+    .input input {
+        width: 100%;
+        padding: 13px 30px;
+        border-radius: 10px;
+        border: 1px solid lightgrey;
+
+    }
+
+    .icon {
+        position: absolute;
+        top: 25%;
+        left: 10px;
+        font-size: 15px;
+    }
+
+    .nav-items {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-items li {
+        list-style: none;
+
+
+    }
+
+    .nav-items li:hover {
+        cursor: pointer;
+    }
+
+    .hero {
+        border: 2px solid lightgrey;
+        height: 45vh;
+        border-radius: 20px;
+        margin: 0 50px;
+        background: linear-gradient(to right, #d8f3dc, #b7e4c7);
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 50px;
+    }
+
+    .hero-wrapper {
+        padding: 70px 0 30px 0;
+        background-color: #f1f3f4;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        color: rgb(86, 85, 85);
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text button {
+        background-color: green;
+        padding: 13px 25px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: 500;
+
+    }
+
+    .hero-image {
+        font-size: 128px;
+    }
+
+    .dummy {
+        height: 100vh;
+        border: 1px solid red;
+    }
+
+    .category {
+        padding: 20px 50px;
+        border-bottom: 1px solid #e0e0e0;
+        position: sticky;
+        /* left:0;
+        right:0; */
+        top: 70px;
+    }
+
+    .category h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .cat-items {
+        width: 35%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #d8f3dc;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+
+    }
+
+    .cat-item-wrapper {
+        /* border: 1px solid black; */
+    }
+
+    .cat-item-wrapper p {
+        text-align: center;
+    }
+
+    main{
+        border: 20px solid green;;
+    }
+
+    </style>
+
+<body>
+
+    <nav>
+        <div class="logo">FreshMart</div>
+        <div class="input">
+            <input type="text" placeholder="Search fruits, vegitables..." />
+            <div class="icon">🔍</div>
+        </div>
+        <div class="nav-items">
+            <li>Home</li>
+            <li>Products</li>
+            <li>Cart</li>
+        </div>
+    </nav>
+    <main>
+        <div class="hero-wrapper">
+            <div class="hero">
+
+                <div class="hero-text">
+                    <h1>Fresh groceries <br>
+                        delivered to you.</h1>
+                    <p>Fruits, vegetables and daily essentials delivered fresh.</p>
+                    <button>Shop Now</button>
+                </div>
+
+                <div class="hero-image">
+                    🛒
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h1>Shop by Category</h1>
+
+            <div class="cat-items">
+
+                <div class="cat-item-wrapper">
+                    <div class="box">🍎</div>
+                    <p>Fruits</p>
+                </div>
+
+                <div class="cat-item-wrapper">
+                    <div class="box">🥦</div>
+                    <p>Vegetables</p>
+                </div>
+
+                <div class="cat-item-wrapper">
+                    <div class="box">🥛</div>
+                    <p>Dairy</p>
+                </div>
+                <div class="cat-item-wrapper">
+                    <div class="box">🍞</div>
+                    <p>Bakery</p>
+                </div>
+                <div class="cat-item-wrapper">
+                    <div class="box">🧃</div>
+                    <p>Drinks</p>
+                </div>
+
+
+            </div>
+        </div>
+
+        
+        <div class="dummy"></div>
+
+    </main>
+
+    
+
+    
+
+
+
+
+
+</body>
+
+</html>
