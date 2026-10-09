@@ -78,7 +78,7 @@
 
     .hero {
         border: 2px solid lightgrey;
-        height: 45vh;
+        /* height: 45vh; */
         border-radius: 20px;
         margin: 0 50px;
         background: linear-gradient(to right, #d8f3dc, #b7e4c7);
@@ -128,6 +128,7 @@
         padding: 20px 50px;
         border-bottom: 1px solid #e0e0e0;
         position: sticky;
+        background-color: white;
         /* left:0;
         right:0; */
         top: 70px;
@@ -157,19 +158,85 @@
 
     }
 
-    .cat-item-wrapper {
-        /* border: 1px solid black; */
-    }
+
 
     .cat-item-wrapper p {
         text-align: center;
     }
 
-    main{
-        border: 20px solid green;;
+    .product {
+        height: 40vh;
+        width: 15vw;
+        border: 1px solid lightgrey;
     }
 
-    </style>
+    .product-container {
+        /* border: 5px solid green; */
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        padding: 20px;
+
+
+    }
+
+    .product {
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+    .image-cont {
+        height: 70%;
+        background-color: rgb(218, 216, 216);
+        border-radius: 10px;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product h3 {
+        font-size: 20px;
+    }
+
+    .price-tag {
+        color: green;
+    }
+
+    .products-container {
+        padding: 25px;
+        background-color: rgb(247, 246, 246);
+    }
+
+    .freshmart-intro{
+        border: 1px solid lightgrey;
+        margin: 0 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .freshmart-intro p{
+        line-height: 30px;
+        color: rgb(113, 113, 113);
+    }
+
+    .footer{
+        height: 15vh;
+        background: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 
 <body>
 
@@ -234,14 +301,87 @@
             </div>
         </div>
 
-        
-        <div class="dummy"></div>
+
+        <div class="products-container">
+            <h1>Popular Products</h1>
+
+            <div class="product-container">
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🥦</div>
+                    <h3>FFresh Broccoli</h3>
+                    <h3 class="price-tag">₹80 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+                <div class="product">
+                    <div class="image-cont">🍎</div>
+                    <h3>Fresh Apples</h3>
+                    <h3 class="price-tag">₹120 / kg</h3>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="freshmart-intro">
+                <h2>Why FreshMart?</h2>
+                <p>FreshMart brings fresh fruits, vegetables and everyday groceries directly to your doorstep.<br>
+
+                    We work with local suppliers to provide fresh products at affordable prices.<br>
+
+                    Scroll the page and observe what happens to the navbar and category section.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>FreshMart © 2026 | CSS Position Practice</p>
+        </div>
+
 
     </main>
 
-    
 
-    
+
+
 
 
 
