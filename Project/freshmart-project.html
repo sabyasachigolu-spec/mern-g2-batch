@@ -175,7 +175,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 20px;
-        padding: 20px;
+        margin: 20px 0;
 
 
     }
@@ -193,7 +193,7 @@
         height: 70%;
         background-color: rgb(218, 216, 216);
         border-radius: 10px;
-        font-size: 100px;
+        font-size: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -208,7 +208,7 @@
     }
 
     .products-container {
-        padding: 25px;
+        padding: 25px 50px;
         background-color: rgb(247, 246, 246);
     }
 
@@ -228,13 +228,47 @@
         color: rgb(113, 113, 113);
     }
 
-    .footer{
+    footer{
         height: 15vh;
         background: black;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @media (max-width:600px){
+        nav{
+            display: grid;
+            grid-template-areas: "logo navItems"
+                                 "input input";
+            padding: 20px;
+            height: auto;
+            row-gap: 10px;
+        }
+
+        .logo{
+            grid-area: logo;
+            font-size: 28px;
+        }
+
+        .input{
+            grid-area: input;
+            width: 100%;
+        }
+        .input input{
+            padding: 15px 30px;
+            font-size: 22px;
+        }
+
+        .nav-items{
+            grid-area: navItems;
+            display: flex;
+            gap: 10px;
+        }
+
+
+
     }
 </style>
 
@@ -244,7 +278,7 @@
         <div class="logo">FreshMart</div>
         <div class="input">
             <input type="text" placeholder="Search fruits, vegitables..." />
-            <div class="icon">🔍</div>
+            <!-- <div class="icon">🔍</div> -->
         </div>
         <div class="nav-items">
             <li>Home</li>
@@ -303,7 +337,7 @@
 
 
         <div class="products-container">
-            <h1>Popular Products</h1>
+            <h2>Popular Products</h2>
 
             <div class="product-container">
                 <div class="product">
@@ -313,51 +347,45 @@
                 </div>
                 <div class="product">
                     <div class="image-cont">🥦</div>
-                    <h3>FFresh Broccoli</h3>
+                    <h3>Fresh Broccoli</h3>
                     <h3 class="price-tag">₹80 / kg</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🥛</div>
+                    <h3>Fresh Milk</h3>
+                    <h3 class="price-tag">₹60 / litre</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🍞</div>
+                    <h3>Brown Bread</h3>
+                    <h3 class="price-tag">₹45</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🍊</div>
+                    <h3>Fresh Oranges</h3>
+                    <h3 class="price-tag">₹90 / kg</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🍌</div>
+                    <h3>Bananas</h3>
+                    <h3 class="price-tag">₹50 / dozen</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🍅</div>
+                    <h3>Tomatoes</h3>
+                    <h3 class="price-tag">₹40 / kg</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🧃</div>
+                    <h3>Orange Juice</h3>
+                    <h3 class="price-tag">₹120</h3>
                 </div>
                 <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
+                    <div class="image-cont">🥛</div>
+                    <h3>Fresh Milk</h3>
+                    <h3 class="price-tag">₹60 / litre</h3>
                 </div>
-                <div class="product">
-                    <div class="image-cont">🍎</div>
-                    <h3>Fresh Apples</h3>
-                    <h3 class="price-tag">₹120 / kg</h3>
-                </div>
-
-
+                
 
             </div>
 
@@ -372,9 +400,9 @@
             </div>
         </div>
 
-        <div class="footer">
+        <footer>
             <p>FreshMart © 2026 | CSS Position Practice</p>
-        </div>
+        </footer>
 
 
     </main>
