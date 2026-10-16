@@ -19,6 +19,7 @@
         font-family: Arial, sans-serif;
     }
 
+
     nav {
         border-bottom: 1px solid lightgrey;
         height: 70px;
@@ -29,6 +30,7 @@
         position: fixed;
         left: 0;
         right: 0;
+        top: 0;
         background-color: white;
         z-index: 100;
 
@@ -212,7 +214,7 @@
         background-color: rgb(247, 246, 246);
     }
 
-    .freshmart-intro{
+    .freshmart-intro {
         border: 1px solid lightgrey;
         margin: 0 20px;
         padding: 20px;
@@ -223,12 +225,12 @@
         background-color: white;
     }
 
-    .freshmart-intro p{
+    .freshmart-intro p {
         line-height: 30px;
         color: rgb(113, 113, 113);
     }
 
-    footer{
+    footer {
         height: 15vh;
         background: black;
         color: white;
@@ -237,34 +239,56 @@
         align-items: center;
     }
 
-    @media (max-width:600px){
-        nav{
+
+    @media (max-width:600px) {
+        nav {
             display: grid;
             grid-template-areas: "logo navItems"
-                                 "input input";
+                "input input";
             padding: 20px;
-            height: auto;
+            height: 140px;
             row-gap: 10px;
         }
 
-        .logo{
+        .logo {
             grid-area: logo;
             font-size: 28px;
         }
 
-        .input{
+        .input {
             grid-area: input;
             width: 100%;
         }
-        .input input{
+
+        .input input {
             padding: 15px 30px;
             font-size: 22px;
         }
 
-        .nav-items{
+        .nav-items {
             grid-area: navItems;
             display: flex;
             gap: 10px;
+            font-size: 20px;
+        }
+
+        .hero-wrapper {
+            padding: 140px 0 0 0;
+        }
+
+        .hero {
+            margin: 0 10px;
+            padding: 40px 20px;
+            flex-direction: column;
+        }
+
+        .hero-text h1 {
+            font-size: 35px;
+        }
+
+        .hero-image {
+            font-size: 100px;
+            text-align: center;
         }
 
 
@@ -385,7 +409,7 @@
                     <h3>Fresh Milk</h3>
                     <h3 class="price-tag">₹60 / litre</h3>
                 </div>
-                
+
 
             </div>
 
